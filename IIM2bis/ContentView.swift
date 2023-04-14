@@ -10,6 +10,9 @@ import SwiftUI
 struct ContentView: View {
     //variable data flow
     @State var isPresent = false
+    //class data flow
+    
+    
     var body: some View {
         VStack {
             HStack {

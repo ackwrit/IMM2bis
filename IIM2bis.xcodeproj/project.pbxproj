@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6529EAD29E9839E00585062 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6529EAC29E9839E00585062 /* AuthViewModel.swift */; };
 		F6E2A71829E6E26F0096673D /* IIM2bisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E2A71729E6E26F0096673D /* IIM2bisApp.swift */; };
 		F6E2A71A29E6E26F0096673D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E2A71929E6E26F0096673D /* ContentView.swift */; };
 		F6E2A71C29E6E2730096673D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6E2A71B29E6E2730096673D /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F6529EAC29E9839E00585062 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		F6E2A71429E6E26F0096673D /* IIM2bis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IIM2bis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E2A71729E6E26F0096673D /* IIM2bisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IIM2bisApp.swift; sourceTree = "<group>"; };
 		F6E2A71929E6E26F0096673D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				F6E2A75829E714D80096673D /* UserViewModel.swift */,
+				F6529EAC29E9839E00585062 /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				F6E2A74829E6F0150096673D /* registerView.swift in Sources */,
 				F6E2A75929E714D80096673D /* UserViewModel.swift in Sources */,
 				F6E2A71A29E6E26F0096673D /* ContentView.swift in Sources */,
+				F6529EAD29E9839E00585062 /* AuthViewModel.swift in Sources */,
 				F6E2A75729E70BB50096673D /* FirebaseManager.swift in Sources */,
 				F6E2A71829E6E26F0096673D /* IIM2bisApp.swift in Sources */,
 				F6E2A75429E7025C0096673D /* Personne.swift in Sources */,
@@ -490,8 +494,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -528,8 +531,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
