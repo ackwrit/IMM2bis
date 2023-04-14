@@ -11,49 +11,64 @@ struct ContentView: View {
     //variable data flow
     @State var isPresent = false
     //class data flow
+    @StateObject var authVm : AuthViewModel = AuthViewModel()
+    
     
     
     var body: some View {
-        VStack {
-            HStack {
-                Image("chainsaw")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .clipShape(Circle())
-                .frame(width: 150,height: 150)
-                Text("ChainSaw")
-                    .font(.largeTitle)
-                    .bold()
-                    .foregroundColor(.red)
+        if(authVm.isFinishConnecting){
+            //la connexion est passé
+            if(authVm.isAuth){
+                Text("DashBoard")
             }
-            
-            
-            Image("fate")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .cornerRadius(25)
-        
+            else{
+                VStack {
+                    HStack {
+                        Image("chainsaw")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .clipShape(Circle())
+                        .frame(width: 150,height: 150)
+                        Text("ChainSaw")
+                            .font(.largeTitle)
+                            .bold()
+                            .foregroundColor(.red)
+                    }
+                    
+                    
+                    Image("fate")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .cornerRadius(25)
                 
-            Spacer()
-            
-            
-            
-            Button("Cliquer") {
-                self.isPresent.toggle()
+                        
+                    Spacer()
+                    
+                    
+                    
+                    Button("Cliquer") {
+                        self.isPresent.toggle()
+                    }
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(.purple)
+                    .clipShape(Capsule())
+                    
+                }
+                .sheet(isPresented: $isPresent, content: {
+                    registerView(authVm : authVm)
+                })
+                .padding()
+                .background(
+                 Image("tomb")
+                )
             }
-            .padding()
-            .foregroundColor(.white)
-            .background(.purple)
-            .clipShape(Capsule())
-            
         }
-        .sheet(isPresented: $isPresent, content: {
-            registerView()
-        })
-        .padding()
-        .background(
-         Image("tomb")
-        )
+        else
+        {
+            Text("En cours de connexion ...")
+        }
+     
             
     }
 }
