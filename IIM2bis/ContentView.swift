@@ -19,7 +19,7 @@ struct ContentView: View {
         if(authVm.isFinishConnecting){
             //la connexion est passé
             if(authVm.isAuth){
-                Text("DashBoard")
+                HomeView()
             }
             else{
                 VStack {

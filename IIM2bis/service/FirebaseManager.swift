@@ -23,14 +23,22 @@ class FirebaseManager{
     //constructeur
     
     init(){
-        FirebaseApp.configure()
-        auth = Auth.auth()
+        if(FirebaseApp.app() == nil){
+            FirebaseApp.configure()
+        }
+        
+    auth = Auth.auth()
         cloudFirestore = Firestore.firestore()
     }
     
     
     
     //méthode
+    
+    //récuperer l'identifant de la personne conncecté
+    func getId() -> String{
+        return auth.currentUser?.uid ?? ""
+    }
     
     
     //ajouter un utilisateur dans la base donnée

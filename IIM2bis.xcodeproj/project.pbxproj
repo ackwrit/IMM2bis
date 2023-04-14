@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F6529EAD29E9839E00585062 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6529EAC29E9839E00585062 /* AuthViewModel.swift */; };
+		F6529EAF29E99BBE00585062 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6529EAE29E99BBE00585062 /* HomeView.swift */; };
+		F6529EB129E99F6900585062 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6529EB029E99F6900585062 /* SettingsView.swift */; };
 		F6E2A71829E6E26F0096673D /* IIM2bisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E2A71729E6E26F0096673D /* IIM2bisApp.swift */; };
 		F6E2A71A29E6E26F0096673D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E2A71929E6E26F0096673D /* ContentView.swift */; };
 		F6E2A71C29E6E2730096673D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6E2A71B29E6E2730096673D /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		F6529EAC29E9839E00585062 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		F6529EAE29E99BBE00585062 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F6529EB029E99F6900585062 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F6E2A71429E6E26F0096673D /* IIM2bis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IIM2bis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E2A71729E6E26F0096673D /* IIM2bisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IIM2bisApp.swift; sourceTree = "<group>"; };
 		F6E2A71929E6E26F0096673D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				F6E2A74729E6F0150096673D /* registerView.swift */,
+				F6529EAE29E99BBE00585062 /* HomeView.swift */,
+				F6529EB029E99F6900585062 /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -324,8 +330,10 @@
 				F6E2A74829E6F0150096673D /* registerView.swift in Sources */,
 				F6E2A75929E714D80096673D /* UserViewModel.swift in Sources */,
 				F6E2A71A29E6E26F0096673D /* ContentView.swift in Sources */,
+				F6529EB129E99F6900585062 /* SettingsView.swift in Sources */,
 				F6529EAD29E9839E00585062 /* AuthViewModel.swift in Sources */,
 				F6E2A75729E70BB50096673D /* FirebaseManager.swift in Sources */,
+				F6529EAF29E99BBE00585062 /* HomeView.swift in Sources */,
 				F6E2A71829E6E26F0096673D /* IIM2bisApp.swift in Sources */,
 				F6E2A75429E7025C0096673D /* Personne.swift in Sources */,
 			);
